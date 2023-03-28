@@ -1,0 +1,73 @@
+.container-fluid {
+    background: #e3f9ff;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.container-fluid .calculator {
+
+    background: #3a4552;
+    border-radius: 10px;
+    padding: 20px;
+    
+}
+.calculator .row {
+    text-align: center;
+}
+
+.row .output {
+
+    margin: 20px 0px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.col input[type='text'] {
+
+    background:transparent;
+    float: right;
+    text-align: right;
+    padding: 10px;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0,0,0,0.2);
+    width: 100%;
+    font-size: 20px;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+.col input[type='text']:focus {
+
+    color: #33ffd8;
+    
+}
+.col input[type='button'] {
+
+    border-radius: 10px;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: transparent;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0,0,0,0.2);
+    margin: 6px;
+    
+}
+.col #equal {
+
+    width: 110px;
+    color: #33ffd8;
+    font-size: 20px;
+}
+.col #delete,#clear {
+
+    color: #33ffd8;
+}
+
+
+
