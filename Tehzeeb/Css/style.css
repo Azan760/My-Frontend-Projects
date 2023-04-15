@@ -1,7 +1,21 @@
-.navbar {
-    padding: 15px 10px;
+:root {
+
+    --aColor : #c03f38;
+    --aHover : #cd2653;
+    --font1 :  'Roboto', sans-serif;
+    --font2 :  'Open Sans', sans-serif;
+    --aExplore : #ba0101;
+
 }
 
+.navbar {
+    padding: 15px 10px;
+    position: sticky;
+    background-color: white;
+    top: 0;
+    z-index: 999;
+    
+}
 .navbar .container-fluid {
     padding: 0px 15px;
 }
@@ -26,21 +40,19 @@
     padding: 0;
 
 }
-
 .nav-item .delivery {
-    color: #c03f38;
+    color: var(--aColor);
 }
 
 .nav-item .nav-link:hover {
 
-    color: #cd2653;
+    color: var(--aHover);
 }
-
 .vertical-navbar,
 .responsive-navbar {
-
     display: none;
 }
+/*  section 4 style links */
 
 .col .shop-link {
 
@@ -50,15 +62,17 @@
     font-size: 20px;
     background-color: #dc1d48;
     padding: 6px 15px;
+    border-radius: 5px;
     top: 62%;
     left: 68%;
     letter-spacing: 2px;
     text-decoration: none;
 }
-
 .col .shop-link:hover {
     background-color: #b73956;
 }
+
+/* tehzeeb biscuit section */
 
 .Tehzeeb-biscuit {
 
@@ -83,45 +97,40 @@
     margin-bottom: 15px;
     border-radius: 5px;
 }
-
 .Tehzeeb-biscuit-content .royalty {
-
-    font-size: 26px;
+    font-size: 27px;
     letter-spacing: 4px;
     margin-bottom: 35px;
 }
 
 .Tehzeeb-biscuit-content .explore {
-    color: #ba0101;
+    color: var(--aExplore);
     text-decoration: none;
     font-weight: 600;
     font-size: 21px;
+    font-family: var(--font1);
 }
-
 .col .Tehzeeb-biscuit-img {
-
     padding-top: 50px;
     max-width: 80%;
     margin: auto;
 }
-
 .Tehzeeb-biscuit-img .Biscuit-list {
     display: grid;
     grid-template-columns: repeat(4, 25%);
 }
 
-.Biscuit-list .nav-item {
+.Biscuit-list .biscuit-item {
     list-style-type: none;
     text-align: center;
     padding: 10px;
     margin-bottom: 30px;
 }
-
-.nav-item span {
+.biscuit-item span {
     text-align: center;
     display: block;
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
+    font-family: var(--font1);
+    font-size: 19px;
     padding: 15px 0px;
 }
 
@@ -407,6 +416,7 @@
 .links img {
     width: 270px;
     margin-bottom: 35px;
+    display: inline-block;
 }
 
 .Nimko .explore,
@@ -464,39 +474,72 @@
 .footer-1 {
     background-color: 	#f3f3f3;
     font-family: 'Roboto', sans-serif;
-    margin-top: 30px;
-    padding: 50px 0px;
 }
-.categories .head,.service .head,
-.company .head {
+.categorie-item .head,
+.service-item .head,
+.company-item .head {
     font-size: 14px;
     color: 	#000;
-    padding-bottom: 30px;
+    padding-bottom: 15px;
     font-weight: 600;
 
 }
-.footer-1 .footer-row {
-    max-width: 80%;
-    margin: auto;
-    
+.footer-1 .foo {
+    display: grid;
+    grid-template-columns: repeat(4,20%);
+    padding: 0px 100px;
 }
-.categories .cat-item,
-.company .cat-item,.service .serv-item {
+.categorie-item .categorie-list,
+.company-item .company-list {
     list-style-type: none;
-    padding: 10px;
+    padding: 10px 0px;
 }
-.cat-item a {
+.categorie-list a,
+.company-list a {
     text-decoration: none;
     color: black;
-    opacity: 0.7;
+    opacity: 0.8;
     font-size: 14px;
 }
-.serv-item a {
+.categorie-list a:hover,
+.company-list a:hover {
+    color: var(--aHover);
+}
+.service-item .service-list {
+    list-style-type: none;
+}
+.service-list a {
     text-decoration: none;
     color: 	#4bac4c;
     font-family: 'Times New Roman', Times, serif;
-
 }
+.service-list a:hover {
+    color: var(--aHover);
+}
+
+.footer-dropdown {
+    display: none;
+}
+
+.col .copyright {
+    font-family: var(--font1);
+    font-size: 16px;
+    color: #585858;
+    float: left;
+    
+}
+.copyright a {
+    color: black;
+    text-decoration: none;
+    
+}
+.copyright a:hover {
+    color: var(--aHover);
+}
+.col .media-icon {
+    float: right;
+}
+
 
 
 
@@ -509,42 +552,35 @@
     .navbar-nav .nav-item {
         padding: 0px 17px;
     }
-
     .nav-item .nav-link {
         font-size: 14px;
     }
-
     .col .shop-link {
         font-size: 18px;
         padding: 5px 10px;
     }
 
+    /* tehzeeb biscuit */
+
     .Tehzeeb-biscuit-content .royal {
         font-size: 42px;
-        margin-bottom: 25px;
     }
-
     .Tehzeeb-biscuit-content .divider {
         width: 310px;
     }
-
     .Tehzeeb-biscuit-content .royalty {
         font-size: 26px;
         letter-spacing: 3px;
     }
-
     .Tehzeeb-biscuit-content .explore {
         font-size: 21px;
     }
-
     .col .Tehzeeb-biscuit-img {
         max-width: 88%;
     }
-
-    .nav-item span {
-        font-size: 18px;
+    .biscuit-item span {
+        font-size: 19px;
     }
-
     .col .Classical-baking {
         max-width: 90%;
     }
@@ -668,7 +704,6 @@
     .navbar-nav .nav-item {
         padding: 0px 8px;
     }
-
     .nav-item .nav-link {
         font-size: 13px;
     }
@@ -681,31 +716,27 @@
     .Tehzeeb-biscuit {
         padding-top: 70px;
     }
-
     .Tehzeeb-biscuit-content .royal {
         font-size: 40px;
-        margin-bottom: 25px;
     }
-
     .Tehzeeb-biscuit-content .divider {
         width: 290px;
     }
-
     .Tehzeeb-biscuit-content .royalty {
         font-size: 23px;
         letter-spacing: 3px;
     }
-
     .Tehzeeb-biscuit-content .explore {
         font-size: 20px;
     }
-
     .col .Tehzeeb-biscuit-img {
         max-width: 96%;
     }
-
-    .nav-item span {
-        font-size: 17px;
+    .Biscuit-list .biscuit-item {
+        padding: 5px;
+    }
+    .biscuit-item span {
+        font-size: 18px;
     }
 
     .col .Classical-baking {
@@ -807,9 +838,7 @@
     .Pastry-content .divider {
         width: 270px;
     }
-
     .Pastry-content .artisan {
-
         font-size: 21px;
     }
 
@@ -846,11 +875,8 @@
     letter-spacing: 2px;
 
 }
-.footer-1 .footer-row {
-    max-width: 90%;
-    margin: auto;
-    
-}
+
+
 
 }
 
@@ -863,31 +889,31 @@
     .navbar {
         display: none;
     }
-
     .vertical-navbar,
     .responsive-navbar {
-
         display: block;
     }
-
     .responsive-navbar {
-        padding: 12px;
+        padding: 10px 12px;
+        position: sticky;
+        top: 0;
+        z-index: 999;
+        background-color: white;
     }
-
     .responsive-navbar .row {
 
         align-items: center;
     }
-
     .delivery a {
         text-decoration: none;
-        color: #c03f38;
+        color: var(--aColor);
         font-weight: 900;
-        font-family: 'Open Sans', sans-serif;
+        font-family: var(--font1);
+        font-size: 17px;
     }
 
     .vertical-navbar {
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
         background-color: #fff;
@@ -895,8 +921,8 @@
         z-index: 999;
         transition: transform 1.5s ease;
         transform: translateX(0%);
-        /* overflow-x: auto;
-        height: 100%; */
+         overflow-x: auto;
+        height: 100%; 
         border: 1px solid #dfdfdf;
     }
 
@@ -940,31 +966,24 @@
     .Tehzeeb-biscuit {
         padding-top: 50px;
     }
-
     .Tehzeeb-biscuit-content .royal {
         font-size: 35px;
         margin-bottom: 23px;
     }
-
     .Tehzeeb-biscuit-content .divider {
-        width: 260px;
+        width: 250px;
     }
-
     .Tehzeeb-biscuit-content .royalty {
         font-size: 20px;
         letter-spacing: 3px;
     }
-
     .Tehzeeb-biscuit-content .explore {
         font-size: 20px;
     }
-
     .col .Tehzeeb-biscuit-img {
         max-width: 100%;
-
     }
-
-    .nav-item span {
+    .biscuit-item span {
         font-size: 15px;
     }
 
@@ -1125,12 +1144,32 @@
 .icon-link img {
     width: 30px;
 }
-.footer-1 .footer-row {
-    max-width: 95%;
-    margin: auto;
-    
+.categorie-list a,
+.company-list a {
+    font-size: 13px;
+}
+.footer-1 .foo {
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    padding: 0px 30px;
 }
 
+
+.col .copyright {
+    font-family: var(--font1);
+    font-size: 16px;
+    color: #585858;
+    float: none;
+    padding: 5px;
+    
+}
+.copyright a:hover {
+    color: var(--aHover);
+}
+.col .media-icon {
+    float: none;
+    padding:5px;
+}
 
 
 }
@@ -1154,34 +1193,32 @@
     }
 
     .Tehzeeb-biscuit-content .royal {
-        font-size: 30px;
+        font-size: 32px;
         margin-bottom: 20px;
     }
 
     .Tehzeeb-biscuit-content .divider {
-        width: 210px;
+        width: 190px;
     }
-
     .Tehzeeb-biscuit-content .royalty {
         font-size: 19px;
         letter-spacing: 2px;
     }
-
     .Tehzeeb-biscuit-content .explore {
         font-size: 18px;
     }
-
     .col .Tehzeeb-biscuit-img {
         max-width: 100%;
     }
-
-    .nav-item span {
-        font-size: 16.5px;
-
+    .Biscuit-list .biscuit-item {
+        padding: 5px;
+    }
+    .biscuit-item span {
+        font-size: 17px;
     }
 
     .Time-to-meet {
-        padding: 50px 0px;
+        padding: 60px 0px;
     }
 
     .col .Classical-baking {
@@ -1189,26 +1226,23 @@
     }
 
     .Classical-baking .classical-baking-img {
-        bottom: 40px;
+        bottom: 35px;
     }
-
     .Classical-baking .culture {
-        font-size: 14px;
-        padding: 0px 40px;
+        font-size: 16px;
+        padding: 0px 20px;
     }
-
     .classical-baking-img img {
-        width: 200px;
+        width: 230px;
     }
 
     .Classical-baking .tehzeeb-home-img {
-        top: 30px;
+        top: 38px;
     }
 
     .tehzeeb-home-img img {
-        width: 200px;
+        width: 250px;
     }
-
     .Bread {
         padding: 5px 0px 40px 0px;
     }
@@ -1376,12 +1410,43 @@
     font-size: 19px;
     letter-spacing: 2px;
 }
-
 .footer-1 {
     display: none;
 }
-
-
+.footer-dropdown {
+    background-color: 	#f3f3f3;
+    font-family: 'Roboto', sans-serif;
+    display: block;
+}
+.categories .head, .company .head,
+.services .head {
+    font-size: 16px;
+    color: 	#000;
+    font-weight: 500;
+}
+.categories .bi, .company .bi,
+.services .bi {
+    position: absolute;
+    right: 10px;
+    top: 13px;
+}
+.col .dropdown-menus {
+    display: none;
+}
+.dropdown-menus li {
+    padding: 10px;
+}
+li .dropdown-items {
+    text-decoration: none;
+    color: black;
+    opacity: 0.8;
+    font-size: 14px;
+}
+.categories .bi-chevron-up,
+.company .bi-chevron-up,
+.services .bi-chevron-up {
+    display: none;
+}
 
 }
 
@@ -1391,12 +1456,8 @@
 @media (max-width:360px) and (min-width:250px) {
 
     .delivery a {
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 900;
-    }
-
-    button .open {
-        width: 20px;
     }
 
     .col .shop-link {
@@ -1407,46 +1468,40 @@
     }
 
     .Tehzeeb-biscuit {
-        padding-top: 50px;
+        padding-top: 40px;
     }
 
     .Tehzeeb-biscuit-img ul {
         grid-template-columns: repeat(2, 50%);
     }
-
     .Tehzeeb-biscuit-content .royal {
-        font-size: 20px;
+        font-size: 24px;
         margin-bottom: 20px;
     }
-
     .Tehzeeb-biscuit-content .divider {
         width: 100px;
     }
 
     .Tehzeeb-biscuit-content .royalty {
-        font-size: 16px;
-        letter-spacing: 1px;
+        font-size: 14px;
+        
     }
-
     .Tehzeeb-biscuit-content .explore {
         font-size: 16px;
     }
-
     .col .Tehzeeb-biscuit-img {
         max-width: 95%;
     }
-
-    .Biscuit-list .nav-item {
+    .Biscuit-list .biscuit-item {
         padding: 0px;
     }
-
-    .nav-item span {
-        font-size: 13px;
-
+    .biscuit-item span {
+        font-size: 15px;
+        padding: 20px 0px;
     }
 
     .Time-to-meet {
-        padding: 50px 0px;
+        padding: 60px 0px;
     }
 
     .col .Classical-baking {
@@ -1454,28 +1509,25 @@
     }
 
     .Classical-baking .classical-baking-img {
-        bottom: 40px;
+        bottom: 35px;
     }
-
     .Classical-baking .culture {
-        font-size: 15px;
-        padding: 0px 40px;
+        font-size: 14px;
+        padding: 0px 20px;
+        position: relative;
+        top: -15px;
     }
-
     .classical-baking-img img {
-        width: 170px;
+        width: 180px;
     }
-
     .Classical-baking .tehzeeb-home-img {
-        top: 30px;
+        top: 35px;
     }
-
     .tehzeeb-home-img img {
-        width: 170px;
+        width: 180px;
     }
-
     .Classical-baking .divider {
-        width: 120px;
+        width: 140px;
     }
 
     .Bread {
