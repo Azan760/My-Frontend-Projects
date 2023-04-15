@@ -14,7 +14,7 @@ Close.addEventListener('click', () => {
 // Chnage image section 1 every 5 sec.
 
 let Images = ['Images/chicken-qui.jpg', 'Images/cheese-onion-Desktop.jpg', 'Images/chicken-pie-desktop-1.jpg', 'Images/eid-blessings-Desktop.jpg', 'Images/Tehzeeb_Desktop.jpg'];
-let Images2 = ['Images/chicken-qui-res.jpg', 'Images/cheese-onion-responsive.jpg', 'Images/Tehzeeb-Responsive.jpg', 'Images/eid-blessings-Responsive.jpg', 'Images/Tehzeeb-Responsive-1.jpg'];
+let Images2 = ['Images/chicken-qui-res.jpg', 'Images/cheese-onion-Responsive.jpg', 'Images/Tehzeeb-Responsive.jpg', 'Images/eid-blessings-Responsive.jpg', 'Images/Tehzeeb-Responsive-1.jpg'];
 let counter = 0;
 function changeImages() {
 	document.getElementById('source1').srcset = Images[counter];
