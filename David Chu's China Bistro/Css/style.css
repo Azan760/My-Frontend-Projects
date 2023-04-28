@@ -1,0 +1,318 @@
+:root {
+    --font1 :  'Lora', serif;
+     --font2 :   'Oxygen', sans-serif;
+     --green : #557c3e;
+     --bg : #f6b319;
+     --link : #951C49;
+}
+body {
+    background-color: #61122f;
+}
+.navbar {
+   background-color :  var(--bg);
+   padding: 10px 20px;
+}
+.col-lg-6 .david {
+    color: var(--green);
+    font-size: 26px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #222;
+    font-family:var(--font1); 
+    padding-left: 20px;
+}
+.nav-item .nav-link {
+    color: var(--link);
+    text-decoration: none;
+    font-family: var(--font2);
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    padding: 15px !important;
+    
+}
+.nav-item .nav-link:hover {
+    background-color: #e7e7e7;
+}
+.nav-link .glyphicon {
+    font-size: 30px;
+    display: block;
+}
+.nav-item .phone {
+    font-size: 30px;
+    padding-bottom: 5px !important;
+}
+.nav-item .deliver {
+    color: var(--green);
+    font-size: 16px;
+}
+.jumbotron-img img {
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 50px #3F0C1F;
+    border: 2px solid #3F0C1F;
+} 
+.tri-img  {
+    padding-top: 30px;
+}
+.tri-img .row {
+    margin-left: -30px;
+    margin-right: -30px;
+}
+a .menu-title,a .special-title,
+a .map-title {
+    border:2px solid #3F0C1F;
+    position: relative;
+}
+a .menu-title,a .special-title,
+a .map-title {
+    height: 100%;
+}
+.menu-title span,.special-title span,
+.map-title span {
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.6em;
+    text-transform: uppercase;
+    background-color: #000;
+    color: #fff;
+    opacity: .8;
+    padding: 5px;
+}
+ .col-md-4 a {
+    display: block;
+    height: 100%;
+} 
+.col-md-4 a:hover {
+    box-shadow: 0px 0px 5px white;
+}
+.footer {
+    background-color: #222;
+    color: white;
+    padding: 20px 0px;
+    margin-top: 20px;
+}
+.schedule h1,.address h1  {
+    font-size: 23px;
+    padding-bottom: 5px;
+}
+.schedule span,.address span  {
+    font-size: 16px;
+    display: block;
+    padding-bottom: 10px;
+
+}
+.address p,.resturant p {
+    font-size: 16px;
+}
+p a {
+    color: white;
+}
+p a:hover {
+    color: white;
+}
+.address .mile {
+    font-size: 13px;
+    color: #557c3e;
+}
+.row .copy {
+    font-size: 17px;
+}
+.address .divider, .schedule .divider {
+    background-color: white;
+    width: 400px;
+    height: 0px;
+    opacity: 1;
+    margin: 30px auto;
+}
+
+
+#spinner {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 75px;
+    transform:translate(-50%, -50%);
+    background-color: #fff;
+}
+
+
+@media (max-width:1200px) and (min-width:992px) {
+    .col-lg-6 .david {
+        font-size: 24px;
+        padding-left: 10px;
+    }
+    .col-lg-6 .kosher-certfied {
+        padding: 0px 10px !important;
+    }
+    .nav-item .nav-link {
+        padding : 10px !important;
+    }
+}
+
+@media (max-width:992px) and (min-width:768px) {
+    .navbar {
+        padding: 10px;
+    }
+    .row .col-12 {
+        padding: 0px;
+    }
+    .col-12 .david {
+        font-size: 28px;
+        padding-left: 10px;
+        margin-top: 10px;
+    }
+    .col-12 .kosher-certfied {
+        position: absolute;
+        top: 50px;
+        margin-right: auto;
+        display: block !important;
+        padding: 0px 10px !important;
+    }
+    .nav-item .nav-link {
+        padding : 15px  !important;
+    }
+
+   
+}
+
+@media (max-width:768px) and (min-width:250px) {
+    .navbar {
+        padding: 10px 0px 0px 0px;
+    }
+    .row .col-12 {
+        padding: 0px;
+    }
+    .collapse .navbar-nav {
+        margin: auto;
+    }
+    .col-12 .david {
+        font-size: 30px;
+        padding-left: 10px;
+        margin-top: 6px;
+        display:  block !important; 
+    }
+    .col-12 .kosher-certfied {
+        position: absolute;
+        top: 45px;
+        margin-right: auto;
+        display: block !important;
+        padding: 0px 10px !important;
+    }
+    .nav-item .nav-link {
+        padding : 15px  !important;
+    }
+    .col-12 .navbar-toggler {
+       font-size:18px;
+       border: 1px solid #61122f;
+       padding: 3px 10px;
+       margin-right: 15px;
+       border-radius: 4px;
+       margin-bottom: 5px;
+       clear: both;
+    }
+    .col-12 .navbar-collapse {
+        border-top: 1px solid white;
+        padding-top: 10px !important;
+    }
+    .col-12 .navbar-toggler:hover {
+        background-color: #ddd;
+     }
+    .nav-item .nav-link {
+        font-size: 19.2px;
+        padding: 12px 15px !important;
+        line-height: 20px;
+    }
+    .nav-link .glyphicon {
+         font-size: 19.2px;
+         padding-right: 5px;
+         display: inline-block;
+    }
+    .resturant-number .phone {
+        background-color: var(--bg); 
+        color: #951C49;
+        padding: 10px;
+        font-size: 25px;
+        margin: 0px 20px;
+        border-radius: 5px;
+        outline: 2px solid white;
+        font-family: var(--font2);
+    }
+    .resturant-number .deliver {
+        color: #fff;
+        font-size: 12px;
+        margin-bottom: 25px;
+    }
+    .Jumbotron {
+        max-width: 100%;
+        padding: 30px;
+        margin: auto; 
+    }
+    .tri-img {
+        max-width: 100%;
+        padding: 30px;
+        margin: auto; 
+    }
+    .row .col-xs-12 {
+        text-align: center;
+    }
+    .footer .foot {
+        max-width: 100%;
+        padding: 0px 30px;
+        margin: auto; 
+    }
+    .col-xs-12 a {
+        display: inline-block;
+    }
+    .address .divider, .schedule .divider {
+        background-color: white;
+        width: 200px;
+        height: 0px;
+        opacity: 1;
+        margin: 30px auto;
+    }
+}
+
+@media (max-width:576px) and (min-width:250px) {
+    .col-12 .david {
+        font-size: 22px;
+    }
+    .col-12 .kosher-certfied {
+        top: 40px;
+    }
+    .col-xs-12 a {
+        margin: 0px 30px;
+    }
+    .Jumbotron {
+        padding: 0px 30px;
+    }
+
+}
+
+@media (max-width:350px) and (min-width:250px) {
+    .col-12 .david {
+        font-size: 16px;
+        margin-top: 5px;
+    }
+    .col-12 .kosher-certfied {
+        top: 30px;
+    }
+    .kosher-certfied .kosher {
+        font-size: 12px !important;
+    }
+    .col-12 .navbar-toggler {
+        font-size:15px;
+     }
+     .resturant-number .phone {
+        font-size: 22px;
+    }
+    .col-xs-12 a {
+        margin: 0px 10px;
+    }
+
+
+}
