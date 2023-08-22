@@ -18,6 +18,16 @@ menu_close.addEventListener('click',() => {
    }
 });
 
+let notification = document.getElementById('notification');
+notification.addEventListener('click',()=> {
+   document.getElementById('dropdown-menu').classList.toggle("disable");
+   
+})
+let setting = document.getElementById('setting');
+setting.addEventListener('click',() => {
+   document.getElementById('dropdown-menu-2').classList.toggle("disable-2");
+})
+
 
 
 
